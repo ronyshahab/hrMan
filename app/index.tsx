@@ -1,10 +1,11 @@
-import { View, Text, StyleSheet } from "react-native";
-import LoginScreen from "./layout/auth/login";
+import { StyleSheet, View } from "react-native";
+import HomeLayout from "./layout/home/home";
 
 const App = ({children} : {children: React.ReactNode} ) => {
   return (
     <View style={styles.container}>
-        <LoginScreen />
+        {/* <LoginScreen /> */}
+        <HomeLayout />
       {children}
     </View>
   );

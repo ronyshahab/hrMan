@@ -33,7 +33,7 @@ const LoginScreen = () => {
 
   return (
     <ImageBackground
-  source={require('./bg.png')}
+  source={require('../../assets/bg.png')}
   resizeMode="cover"
   className="flex-1 bg-white"
 >
@@ -65,7 +65,7 @@ const LoginScreen = () => {
               setPhone(text.replace(/[^0-9]/g, ""));
               if (error) setError("");
             }}
-            className={`border rounded-lg px-4 py-4 text-lg bg-transparent mt-8 ${
+            className={`border rounded-lg px-4 py-4 text-lg bg-zinc-50 mt-8 ${
               error ? "border-red-500 text-red-600" : "border-gray-400 text-gray-800"
             }`}
           />
@@ -91,7 +91,7 @@ const LoginScreen = () => {
     {/* Bottom Illustration */}
     <View className="flex-1 justify-end items-center pb-12">
       <Image
-        source={require('./login_illustration.png')}
+        source={require('../../assets/login_illustration.png')}
         className="w-64 h-64"
         resizeMode="contain"
       />
@@ -102,57 +102,5 @@ const LoginScreen = () => {
 
   );
 };
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     padding:8
-//     // marginTop: 16,
-//     // backgroundColor:'blue'
-//   },
-//   subContainer: {
-//     marginVertical: "30%",
-//     // flex:1,
-//     // backgroundColor: "red",
-//     justifyContent:'flex-start'
-//   },
-//   inputContainer: {
-//     // backgroundColor: "green",
-//     marginVertical: "20%",
-//     padding: 10
-//   },
-//   h1Text:{
-//     fontFamily: "Arial",
-//     fontSize: 24,
-//     color: "grey",
-//     fontWeight: "bold",
-//   },
-//   subText:{
-//     fontFamily: "Arial",
-//     fontSize: 16,
-//     color: "grey",
-//   },
-//   input:{
-//     borderWidth:1,
-//     borderColor: "grey",
-//     borderRadius: 4,
-//     padding: 8,
-//     margin:5
-//   },
-//   button:{
-//     backgroundColor: "cyan",
-//     padding: 12,
-//     borderRadius: 4,
-//     alignItems: "center",
-//   },
-//   title: {
-//     fontSize: 24,
-//     fontWeight: "bold",
-//   },
-//   subtitle: {
-//     fontSize: 16,
-//     color: "green",
-//   },
-// });
 
 export default LoginScreen;
